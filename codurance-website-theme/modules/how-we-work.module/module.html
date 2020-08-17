@@ -1,0 +1,28 @@
+<h2 class="how-we-work__title">
+  {% inline_text field="text_field_title" no_wrapper="True" value="{{ module.text_field_title }}" %}
+</h2>
+  
+<p class="how-we-work__description">
+  {% inline_text field="text_field_description" no_wrapper="True" value="{{ module.text_field_description }}" %}
+</p>
+  
+<div class="how-we-work__icon-container">
+  {% for item in module.how_we_work__icons %}
+  
+    <div class="icon-container__icon-wrapper">
+      {% if item.image_field.src %}
+        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+        {% if item.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%;"' %}
+        {% elif item.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ sizeAttrs }}>
+      {% endif %}
+      <span class="how-we-work__image-description">
+        {% inline_text field="text_field_image_description" no_wrapper="True" value="{{ item.text_field_image_description }}" %}
+      </span>
+    </div>
+  
+  {% endfor %}
+</div>

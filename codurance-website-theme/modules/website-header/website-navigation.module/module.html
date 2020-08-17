@@ -1,0 +1,24 @@
+{% if html_lang == 'en' %}
+  {% set home_page_link = 'https://codurance-azurewebsites-net-3042464.hs-sites.com/-temporary-slug-3e7d2e70-09b1-4db2-873c-dbba0ccf1436?hs_preview=WTvtLQyg-33343825988'%}
+{% else %}
+  {% set home_page_link = 'http://codurance-azurewebsites-net-3042464.hs-sites.com/-temporary-slug-3e7d2e70-09b1-4db2-873c-dbba0ccf1436?hs_preview=ldZkUMLC-33577408804'%}
+{% endif %}
+
+<nav class="website-navigation">
+  
+  <a href="{{ home_page_link }}" class="website-navigation-home-link website-navigation__home-link">
+    <img
+       class="website-navigation-home-link__logo"
+       src="https://f.hubspotusercontent10.net/hubfs/3042464/CMS%20Sandbox/Site%20Images/codurance_logo.svg" alt="Codurance Logo"
+    />
+  </a>
+  
+  {% include '/codurance-website-theme/templates/partials/website-navigation-menu-toggle.html' no_wrapper="True" %}
+  
+  {% include '/codurance-website-theme/templates/partials/website-navigation-menu.html' no_wrapper="True" %}
+  
+ {# 
+  {% include website_navigation_menu.liquid class="website-navigation__menu" %}
+  {% include website_navigation_languages.liquid class="website-navigation__languages" %}
+  #}
+</nav>

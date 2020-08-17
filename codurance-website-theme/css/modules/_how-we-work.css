@@ -1,0 +1,75 @@
+{% import '/codurance-website-theme/css/base/_base.css' as base %}
+
+{{ base.max_width_out_there('.how-we-work__description') }}
+
+
+
+.how-we-work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2b3342;
+  color: #FFFFFF;
+}
+
+
+.how-we-work__title {
+  {{ base.max_width_out_there() }};
+  {{ base.dudler() }}
+  text-align: center;
+}
+
+.how-we-work__description {
+  {{ base.max_width_out_there() }};
+  {{ base.base() }}
+  text-align: center;
+}
+
+
+.how-we-work__icon-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.icon-container__icon-wrapper {
+  padding: 25px;
+  text-align: center;
+}
+
+.icon-container__icon-wrapper img {
+  margin-bottom: 25px;
+  height: 60px;
+}
+
+.how-we-work__image-description {
+  width: 100%;
+  display: block;
+}
+
+
+{% call base.small() %}
+  .how-we-work__icon  {
+      flex-basis: calc((100% - (3 * 40px)) / 3);
+      margin: 10px 20px;
+  }
+{% endcall %}
+
+
+{% call base.medium() %}
+  .how-we-work__logo {
+    flex-basis: calc((100% - (4 * 50px)) / 4);
+    margin: 10px 25px;
+  }
+{% endcall %}
+
+
+{% call base.large_and_extra_large() %}
+  .how-we-work__logo {
+    flex-basis: calc((100% - (6 * 60px)) / 6);
+    margin: 10px 30px;
+ }
+{% endcall %}

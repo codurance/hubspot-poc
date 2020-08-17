@@ -1,0 +1,18 @@
+<section class="codurance-clients">
+	<h3 class="codurance-clients__clients-title">
+		{% inline_text field="text_field" no_wrapper="True" value="{{ module.text_field }}" %}
+	</h3>
+	<div class="codurance-clients__logo-container">
+		{% for item in module.image_field %}
+			{% if item.src %}
+				{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+				{% if item.size_type == 'auto' %}
+					{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+				{% elif item.size_type == 'auto_custom_max' %}
+					{% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.max_width }}px; max-height: {{ item.max_height }}px"' %}
+				{% endif %}
+				<img class="codurance-clients__logo" src="{{ item.src }}" alt="{{ item.alt }}" {{ sizeAttrs }}>
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>

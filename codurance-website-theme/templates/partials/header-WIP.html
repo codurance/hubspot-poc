@@ -1,0 +1,21 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<header class="website-header website-header--revealed">
+  <nav class="website-navigation">
+    {% module "website_navigation_home_link" path="/codurance-website-theme/modules/website-header/website_navigation_home_link"
+      class="website-navigation-home-link__logo"
+    %}
+
+    {% module "website_navigation_menu_toggle" path="/codurance-website-theme/modules/website-header/website_navigation_menu_toggle"
+      class="website-navigation__menu-toggle"
+    %}
+
+    {% include "website_navigation_menu" path="/codurance-website-theme/modules/website-header/website_navigation_menu"
+      class="website-navigation__menu"
+    %}
+
+    {% include website_navigation_languages.liquid class="website-navigation__languages" %}
+  </nav>
+</header>

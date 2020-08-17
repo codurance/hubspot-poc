@@ -1,0 +1,81 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+
+{% set website_navigation_menus = {
+    'clients': {
+      'key': 'clients',
+      'label': 'Clients',
+      'path': '/clients/'
+    },
+    'services': {
+      'key': 'services',
+      'label': 'Services',
+      'sub_menu_items': {
+        'services_overview': {
+          'key': 'services-overview',
+          'label': 'Services & Solutions',
+          'path': '/services/'
+        },
+        'software_modernisation': {
+          'key': 'software-modernisation',
+          'label': 'Software Modernisation',
+          'path': '/services/software-modernisation/'
+        },
+        'software_delivery': {
+          'key': 'software-delivery',
+          'label': 'Software Delivery',
+          'path': '/services/software-delivery/'
+        },
+        'specialist_expertise': {
+          'key': 'software-expertise',
+          'label': 'Specialist Expertise',
+          'path': '/services/specialist-expertise/'
+        },
+        'strategic-advice': {
+          'key': 'strategic-advice',
+          'label': 'Strategic Advice',
+          'path': '/services/strategic-advice/'
+        },
+        'training': {
+          'key': 'training',
+          'label': 'Training',
+          'path': '/services/training'
+        }
+      }
+    },
+    'publications': {
+      'key': 'publications',
+      'label': 'Publications',
+      'path': '/publications/'
+    },
+    'careers': {
+      'key': 'careers',
+      'label': 'Careers',
+      'path': '/careers/'
+    },
+    'about_us': {
+      'key': 'about-us',
+      'label': 'About us',
+      'sub_menu_items': {
+        'our_people': {
+          'key': 'our-people',
+          'label': 'Our People',
+          'path': '/about-us/our-people'
+        },
+        'our_story': {
+          'key': 'our-story',
+          'label': 'Our Story',
+          'path': '/about-us/our-story'
+        }
+      }, 
+    },
+    'contact': {
+      'key': 'contact',
+      'label': 'Contact us',
+      'path': '/contact-us/'
+    }
+} %}
+
+

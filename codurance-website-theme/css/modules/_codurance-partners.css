@@ -1,0 +1,48 @@
+{% import '/codurance-website-theme/css/base/_base.css' as base %}
+
+.codurance-partners {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.codurance-partners__partners-title {
+  {{ base.dudler() }}
+  text-align: center;
+}
+
+{{ base.max_width_out_there('.codurance-partners') }}
+{{ base.lateral_spacing('.codurance-partners') }}
+
+.codurance-partners__logo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.codurance-partners__logo {
+  filter: grayscale(100%);
+  opacity: 0.8;
+  width: 115px;
+}
+{% call base.small() %}
+  .codurance-partners__logo {
+      flex-basis: calc((100% - (3 * 40px)) / 3);
+      margin: 10px 20px;
+  }
+{% endcall %}
+{% call base.medium() %}
+  .codurance-partners__logo {
+    flex-basis: calc((100% - (4 * 50px)) / 4);
+    margin: 10px 25px;
+  }
+{% endcall %}
+{% call base.large_and_extra_large() %}
+ .codurance-partners__logo {
+    flex-basis: calc((100% - (6 * 60px)) / 6);
+    margin: 10px 30px;
+ }
+{% endcall %}

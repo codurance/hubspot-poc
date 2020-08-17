@@ -1,0 +1,23 @@
+[ {
+  "id" : "3638cbda-a929-493d-9450-5b810ba87da9",
+  "name" : "image_field_1",
+  "label" : "Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "95867a62-a390-8ea7-8b0d-9f68f92ea491",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : null
+} ]

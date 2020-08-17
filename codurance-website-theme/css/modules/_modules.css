@@ -1,0 +1,4 @@
+{% include '/codurance-website-theme/css/modules/_announcement-slice.css' %}
+{% include '/codurance-website-theme/css/modules/_codurance-clients.css' %}
+{% include '/codurance-website-theme/css/modules/_codurance-partners.css' %}
+{% include '/codurance-website-theme/css/modules/_how-we-work.css' %}

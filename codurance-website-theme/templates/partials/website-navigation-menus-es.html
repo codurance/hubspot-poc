@@ -1,0 +1,81 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+
+{% set website_navigation_menus = {
+    'clients': {
+      'key': 'clients',
+      'label': 'Clientes',
+      'path': '/clients/'
+    },
+    'services': {
+      'key': 'services',
+      'label': 'Servicios',
+      'sub_menu_items': {
+        'services_overview': {
+          'key': 'services-overview',
+          'label': 'Servicios y soluciones',
+          'path': '/services/'
+        },
+        'software_modernisation': {
+          'key': 'software-modernisation',
+          'label': 'Software Modernisation',
+          'path': '/services/software-modernisation/'
+        },
+        'software_delivery': {
+          'key': 'software-delivery',
+          'label': 'Software Delivery',
+          'path': '/services/software-delivery/'
+        },
+        'specialist_expertise': {
+          'key': 'specialist-expertise',
+          'label': 'Specialist Expertise',
+          'path': '/services/specialist-expertise/'
+        },
+        'strategic-advice': {
+          'key': 'strategic-advice',
+          'label': 'Strategic Advice',
+          'path': '/services/strategic-advice/'
+        },
+        'training': {
+          'key': 'training',
+          'label': 'Training',
+          'path': '/services/training'
+        }
+      }
+    },
+    'publications': {
+      'key': 'publications',
+      'label': 'Publicaciones',
+      'path': '/publications/'
+    },
+    'careers': {
+      'key': 'careers',
+      'label': 'Carreras',
+      'path': '/careers/'
+    },
+    'about_us': {
+      'key': 'about-us',
+      'label': 'Sobre nosotros',
+      'sub_menu_items': {
+        'our_people': {
+          'key': 'our-people',
+          'label': 'Nuestra gente',
+          'path': '/about-us/our-people'
+        },
+        'our_story': {
+          'key': 'our-story',
+          'label': 'Nuestra historia',
+          'path': '/about-us/our-story'
+        }
+      }, 
+    },
+    'contact': {
+      'key': 'contact',
+      'label': 'Contáctanos',
+      'path': '/contact-us/'
+    }
+} %}
+
+

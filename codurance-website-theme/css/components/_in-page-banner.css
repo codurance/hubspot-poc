@@ -1,0 +1,60 @@
+{% import '/codurance-website-theme/css/base/_base.css' as base %}
+
+{% set banner_height = "300px" %}
+
+.in-page-banner {
+  min-height: {{ banner_height }};
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+{% call base.small() %}
+  .in_page_banner__image {
+    display: none;      
+  }
+{% endcall %}
+
+
+{% call base.medium_large_and_extra_large() %}
+  .in_page_banner__image {
+    width: 50%;
+    background-size: cover;
+    float: left;
+    height: {{ banner_height }};
+  }
+{% endcall %}
+
+
+{% call base.lateral_spacing(".in_page_banner__main") %}
+{% endcall %}
+
+.in_page_banner__main {
+  align-items: center;
+  background-color: #FA7268;
+  display: flex;
+  height: {{ banner_height }};
+  justify-content: center;
+  text-align: center;
+}
+
+
+.in_page_banner__inner {
+  max-width: 500px;
+}
+
+
+.in_page_banner__title {
+  {{ base.mercer_bold() }};
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+
+
+.in_page_banner__description {
+  {{ base.base() }};
+  color: #FFFFFF;
+  margin: 0 0 30px;
+}

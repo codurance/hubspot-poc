@@ -1,0 +1,133 @@
+{% macro habib() %}
+  font-family: proxima-nova;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 88px;
+{% endmacro %}
+
+{% macro habib_bold() %}
+  font-family: proxima-nova;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 88px;
+{% endmacro %}
+
+{% macro gaudi() %}
+  font-family: proxima-nova;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 69px;
+{% endmacro %}
+
+{% macro gaudi_bold() %}
+  font-family: proxima-nova;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 69px;
+{% endmacro %}
+
+{% macro eames() %}
+  font-family: proxima-nova;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 56px;
+{% endmacro %}
+
+{% macro eames_bold() %}
+  font-family: proxima-nova;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 56px;
+{% endmacro %}
+
+{% macro dudler() %}
+  font-family: proxima-nova;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 50px;
+{% endmacro %}
+
+{% macro dudler_bold() %}
+  font-family: proxima-nova;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+{% endmacro %}
+
+{% macro freed() %}
+  font-family: proxima-nova;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+{% endmacro %}
+
+{% macro freed_bold() %}
+  font-family: proxima-nova;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+{% endmacro %}
+
+{% macro mercer() %}
+  font-family: proxima-nova;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 33px;
+{% endmacro %}
+
+{% macro mercer_bold() %}
+  font-family: proxima-nova;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 33px;
+{% endmacro %}
+
+{% macro base() %}
+  font-family: proxima-nova;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+{% endmacro %}
+
+{% macro base_bold() %}
+  font-family: proxima-nova;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+{% endmacro %}
+
+{% macro ponti() %}
+  font-family: proxima-nova;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  line-height: 1;
+  text-transform: uppercase;
+{% endmacro %}
+
+{% macro ponti_bold() %}
+  font-family: proxima-nova;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: 1;
+  text-transform: uppercase;
+{% endmacro %}
+
+{% macro foster() %}
+  font-family: proxima-nova;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  line-height: 1;
+  text-transform: uppercase;
+{% endmacro %}
+
+{% macro foster_bold() %}
+  font-family: proxima-nova;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: 1;
+  text-transform: uppercase;
+{% endmacro %}

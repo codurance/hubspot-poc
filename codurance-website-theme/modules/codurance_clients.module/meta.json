@@ -1,0 +1,13 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 33339494528,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../css/base/_typography.css",
+    "name" : "_typography.css"
+  } ],
+  "label" : "Codurance Clients",
+  "is_available_for_new_content" : true
+}

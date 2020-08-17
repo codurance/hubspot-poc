@@ -1,0 +1,49 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/template-previews/home.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body -%}
+
+
+
+
+
+<main class="body-container-wrapper">
+  {%- module "announcement_slice" path="/codurance-website-theme/modules/announcement_slice.module" label="announcement slice" -%}
+  
+  {%- module "intro_video" path="/codurance-website-theme/modules/intro_video.module" label="announcement slice" -%}
+  
+  <section class="latest-news"> 
+    {% dnd_area "latest-news", class="main" %}
+    {% end_dnd_area %}
+  </section>  
+
+  <section class="homepage-clients">
+    {%- module "clients_block" path="/codurance-website-theme/modules/codurance_clients", label="clients block" -%}
+  </section>
+
+  <section class="homepage-partners">
+    {%- module "partners_block" path="/codurance-website-theme/modules/codurance_partners", label="partners block" -%}
+  </section>
+
+  <section class="how-we-work">
+    {%- module "codurance_how-we-work" path='/codurance-website-theme/modules/how-we-work', label="how we work block" -%}
+  </section>
+
+  <section>
+    {% module "cta-block-softmod" path='/codurance-website-theme/modules/CTA-block-SoftMod', label="CTA block - SoftMod" %}
+  </section>
+
+
+  <section class="software-craftsmanship"> 
+    {% dnd_area "software-craftsmanship", class="main" %}
+    {% end_dnd_area %}
+  </section>    
+
+</main>
+
+{%- endblock body %}

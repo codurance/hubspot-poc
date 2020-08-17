@@ -1,0 +1,20 @@
+[ {
+  "id" : "9cb42b30-15d2-dac0-9b8f-4bdd2ad9bbfe",
+  "name" : "cta_field",
+  "label" : "CTA",
+  "required" : false,
+  "locked" : true,
+  "type" : "cta",
+  "default" : "e4a0f3e4-d6ae-4e03-8a37-091c2d291af2"
+}, {
+  "id" : "d6e2d846-e8e9-b885-cfe7-89ab342017e2",
+  "name" : "text",
+  "label" : "Text",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Announcement slice text"
+} ]

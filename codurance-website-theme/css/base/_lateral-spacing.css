@@ -1,0 +1,80 @@
+{% set lateral_space_small = '20px' %}
+{% set lateral_space_medium = '25px' %}
+{% set lateral_space_large = '50px' %}
+
+{% macro max_width() %}
+  margin-left: auto;
+  margin-right: auto;
+{% endmacro %}
+
+{% macro max_width_out_there(className) %}
+  {{className}} {
+    {{ max_width() }}
+    max-width: calc(1200px + (2 * {{lateral_space_large}}));
+  }
+
+  @media (min-width: 1024px) {
+    {{className}} {
+      padding-left: {{lateral_space_large}};
+      padding-right: {{lateral_space_large}};
+    }
+  }
+{% endmacro %}
+
+{% macro max_width_framed() %}
+  {{ max_width() }}
+  max-width: 1800px;
+{% endmacro %}
+
+
+{% macro max_width_column(className) %}
+  {{className}} {
+    {{ max_width() }}
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    {{className}} {
+      max-width: 770px;
+      width: calc(100% - ({{lateral_space_medium}} * 2));
+    }
+  }
+  @media (min-width: 1024px) {
+    {{className}} {
+      max-width: 800px;
+      width: calc(100% - ({{$lateral_space_large}} * 2));
+    }
+  }
+{% endmacro %}
+
+{% macro lateral_spacing_small(className) %}
+  @media (max-width: 767px) {
+    {{className}} {
+      padding-left: {{lateral_space_small}};
+      padding-right: {{lateral_space_small}};
+    }
+  }
+{% endmacro %}
+
+{% macro lateral_spacing_medium(className) %}
+  @media (min-width: 768px) and (max-width: 1023px) {
+    {{className}} {
+      padding-left: {{lateral_space_medium}};
+      padding-right: {{lateral_space_medium}};
+    }
+  }
+{% endmacro %}
+
+{% macro lateral_spacing_large_and_extra_large(className) %}
+  @media (min-width: 1024px) {
+    {{className}} {
+      padding-left: {{lateral_space_large}};
+      padding-right: {{lateral_space_large}};
+    }
+  }
+{% endmacro %}
+
+{% macro lateral_spacing(className) %}
+  {{ lateral_spacing_small(className) }}
+  {{ lateral_spacing_medium(className) }}
+  {{ lateral_spacing_large_and_extra_large(className) }}
+{% endmacro %}

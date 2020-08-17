@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "fetch-production": "yarn hs fetch --portal=codurance-daniel codurance-website-theme .",
+    "upload-dev": "yarn hs upload --portal=hubspot-dev ./codurance-website-theme codurance-website-theme",
+    "watch": "yarn hs watch ./codurance-website-theme codurance-website-theme"
+  },
+  "name": "hubspot-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@hubspot/cms-cli": "^1.1.10"
+  }
+}

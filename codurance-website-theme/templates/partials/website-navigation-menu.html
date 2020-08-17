@@ -1,0 +1,47 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+
+{% if html_lang == 'en' %}
+  {% include '/codurance-website-theme/templates/partials/website-navigation-menus-en.html' %}
+{% else %}
+  {% include '/codurance-website-theme/templates/partials/website-navigation-menus-es.html' %}
+{% endif %}
+
+<ul id="website-navigation-menu" class="website-navigation__menu website-navigation-menu">
+  {% for item in website_navigation_menus %}
+    <li class="website-navigation-menu__item">
+      
+      {% if item.sub_menu_items  %}
+      
+        <button class="website-navigation-menu__sub-menu-toggle" id="sub-menu-toggle-{{ item.key }}" aria-expanded="false" aria-controls="sub-menu-{{ item.key }}">
+          {{ item.label }}
+        </button>
+      
+      <ul class="website-navigation-sub-menu" id="sub-menu-{{ item.key }}">
+        <button class="website-navigation-sub-menu__toggle-proxy" data-sub_menu_toggle_id="sub-menu-toggle-{{ item.key }}">
+          {{ item.label }}
+        </button>
+        {% for sub_item in item.sub_menu_items %}
+          {% if absolute_url is string_containing sub_item.path %}{% set active_class = 'website-navigation-sub-menu__link--active' %}{% endif %}
+          <li class="website-navigation-sub-menu__item">
+            <a class="website-navigation-sub-menu__link {{ active_class }}" href="{{ sub_item.path }}">{{ sub_item.label }}</a>
+          </li>
+        {% endfor %}  
+      </ul>
+       
+     {% else %}
+      
+        {% if absolute_url is string_containing item.path %}{% set active_class = 'website-navigation-menu__link--active' %}{% endif %}
+        <a href="{{ item.path }}" class="website-navigation-menu__link {{ active_class }}">{{ item.label }}</a> 
+      
+      {% endif %}
+      
+    </li>
+  {% endfor %}  
+</ul>
+
+
+
+

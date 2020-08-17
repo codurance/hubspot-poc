@@ -1,0 +1,31 @@
+[ {
+  "id" : "c891ef15-d880-bb16-e447-dfa7b1b6d38d",
+  "name" : "text_field_home_title",
+  "label" : "Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "bc0716ff-c94e-5983-b5ea-58424fee4108",
+  "name" : "text_field_home_description",
+  "label" : "Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "fe547104-04c4-f374-e5da-401f6917d50f",
+  "name" : "cta_field",
+  "label" : "CTA",
+  "required" : false,
+  "locked" : true,
+  "type" : "cta",
+  "default" : null
+} ]

@@ -1,0 +1,7 @@
+{% include './_reset.css' %}
+{% include './_normalize.css' %}
+{% include './_global-styles.css' %}
+{% include './_typography.css' %}
+{% include './_colors.css' %}
+{% include './_breakpoints.css' %}
+{% include './_lateral-spacing.css' %}

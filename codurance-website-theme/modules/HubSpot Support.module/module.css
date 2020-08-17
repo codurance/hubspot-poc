@@ -1,0 +1,9 @@
+{% macro habib() %}
+  font-size: 70px;
+  line-height: 88px;
+{% endmacro %}
+
+
+.clients-title {
+  {{ habib() }}
+}

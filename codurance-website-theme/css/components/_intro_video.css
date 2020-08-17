@@ -1,0 +1,69 @@
+{% import '/codurance-website-theme/css/base/_base.css' as base %}
+
+
+.intro_video-wrapper {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  background: url(https://f.hubspotusercontent10.net/hubfs/3042464/CMS%20Sandbox/Intro%20Video/bg-intro_video.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_video-wrapper__title {
+  {{ base.gaudi() }}
+}
+
+.intro_video-wrapper__description {
+  {{ base.freed() }}
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.intro_video-wrapper:after {
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+
+.intro_video-text {
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.intro_video-wrapper video {
+  width: 140%;
+  height: auto;
+  transform: translate(-50%, -20%);
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 20%;
+}
+
+
+{% call base.small() %}
+  .intro_video-wrapper video {
+    display: none;      
+  }
+{% endcall %}
+
+
+{% call base.medium_large_and_extra_large() %}
+  .intro_video-wrapper video {
+    display: block;      
+  }
+{% endcall %}
