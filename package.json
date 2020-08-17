@@ -9,6 +9,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@hubspot/cms-cli": "^1.1.10"
+    "@hubspot/cms-cli": "^1.1.10",
+    "js-yaml": "^3.14.0"
   }
 }
